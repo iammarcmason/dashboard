@@ -5,7 +5,8 @@
         <article class="item">
           <h2>{{post.title}}</h2>
           <h1>{{post.brief}}</h1>
-          <p>{{post.body}}</p>
+          <!--<p>{{post.body}}</p>-->
+          <p><span v-html="post.body"></span></p>
         </article>
       </div>
     </div>

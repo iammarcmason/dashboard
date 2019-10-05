@@ -39,7 +39,12 @@ body {
 	margin-right:20px;
 
 }
-
+pre code {
+	background-color: #eee;
+	border: 1px solid #999;
+	display: block;
+	padding: 20px;
+  }
 ol, ul {
 	list-style: none;
 }
