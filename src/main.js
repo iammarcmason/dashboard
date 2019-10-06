@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import './assets/css/main.css';
+import './assets/css/ft-syntax-highlight.min.css';
 
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);

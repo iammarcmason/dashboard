@@ -31,10 +31,15 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+
+}
+.nightMode{
+	background: #41484c !important;
+	color:#bbb;
 }
 
 .post {
-	font-size: 1em;
+	font-size: 100%;
 	padding-left: 20px;
 	margin-right:20px;
 
@@ -77,6 +82,7 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+	width:100%;
 }
 
 /* Basic */
@@ -92,7 +98,7 @@ input, select, textarea {
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 12pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -111,10 +117,11 @@ input, select, textarea {
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 12pt;
 		font-weight: 300;
-		line-height: 1.75em;
+		line-height: 1em;
 		color: #888;
+		width:900px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -459,7 +466,7 @@ input, select, textarea {
 
 		.row {
 			margin-top: -40px;
-			margin-left: -40px;
+			margin-left: 0px;
 		}
 
 			.row > * {
@@ -1860,7 +1867,7 @@ input, select, textarea {
 		outline: 0;
 		background: #fff;
 		background: rgba(255, 255, 255, 0.75);
-		width: 100%;
+
 		border-radius: 0.35em;
 		padding: 0.75em 1em 0.75em 1em;
 		box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
@@ -1888,7 +1895,7 @@ input, select, textarea {
 	}
 
 	form textarea {
-		min-height: 14em;
+		min-height: 5em;
 	}
 
 	form ::-webkit-input-placeholder {
@@ -1916,6 +1923,7 @@ input, select, textarea {
 	table {
 		width: 100%;
 		text-align: left;
+		font-size: 12;
 	}
 
 		table tbody tr:nth-child(2n+2) {
@@ -1923,12 +1931,12 @@ input, select, textarea {
 		}
 
 		table td {
-			padding: 0.5em 1em 0.5em 1em;
+			padding: 0.5em 0.5em 0.5em 0.5em;
 		}
 
 		table th {
 			text-align: left;
-			padding: 0.5em 1em 0.5em 1em;
+			padding: 0.5em 0.5em 0.5em 0.5em;
 			color: #fff;
 			background: #222729 url("images/overlay.png");
 		}
@@ -2062,7 +2070,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 375px;
+		width: 275px;
 	}
 
 		#header .top {
@@ -2182,7 +2190,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		margin-left: 375px;
+		margin-left: 275px;
 		text-align: center;
 		background-color: #dce3e2;
 		padding: 3em 0 4em 0;
@@ -2212,7 +2220,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 375px; margin-right: 0;
+		margin-left: 275px; margin-right: 0;
 	}
 
 		#main > section {
@@ -2277,7 +2285,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 12pt;
 			}
 
 		/* Header */
@@ -2323,7 +2331,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 12pt;
 			}
 
 			.container {
@@ -2398,7 +2406,7 @@ input, select, textarea {
 			}
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 12pt;
 			}
 
 			header br {
@@ -2589,7 +2597,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt;
+				font-size: 12pt;
 			}
 
 			h2 {

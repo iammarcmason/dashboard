@@ -5,27 +5,21 @@
         <h1>Edit Post</h1>
         <form @submit.prevent="updatePost">
           <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Post Title:</label>
-                <input type="text" class="form-control" v-model="post.title" />
-              </div>
+            <div class="form-group">
+              <label>Post Title:</label>
+              <input type="text" class="form-control" v-model="post.title" />
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Post Brief:</label>
-                <textarea class="form-control" v-model="post.brief" rows="2"></textarea>
-              </div>
+            <div class="form-group">
+              <label>Post Brief:</label>
+              <textarea class="form-control" v-model="post.brief" rows="2"></textarea>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Post Body:</label>
-                <textarea class="form-control" v-model="post.body" rows="50"></textarea>
-              </div>
+            <div class="form-group">
+              <label>Post Body:</label>
+              <textarea class="form-control" v-model="post.body" rows="50"></textarea>
             </div>
           </div>
           <br />
@@ -46,14 +40,14 @@ export default {
     };
   },
   created() {
-    let uri = `http://localhost:4000/posts/edit/${this.$route.params.id}`;
+    let uri = `https://dashboard.iammarcmason.now.sh:4000/posts/edit/${this.$route.params.id}`;
     this.axios.get(uri).then(response => {
       this.post = response.data;
     });
   },
   methods: {
     updatePost() {
-      let uri = `http://localhost:4000/posts/update/${this.$route.params.id}`;
+      let uri = `https://dashboard.iammarcmason.now.sh:4000/posts/update/${this.$route.params.id}`;
       this.axios.post(uri, this.post).then(() => {
         this.$router.push({ name: "posts" });
       });

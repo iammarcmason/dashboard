@@ -6,7 +6,9 @@
           <h2>{{post.title}}</h2>
           <h1>{{post.brief}}</h1>
           <!--<p>{{post.body}}</p>-->
-          <p><span v-html="post.body"></span></p>
+          <p>
+            <span v-html="post.body"></span>
+          </p>
         </article>
       </div>
     </div>
@@ -22,7 +24,7 @@ export default {
     };
   },
   created() {
-    let uri = `http://localhost:4000/posts/post/${this.$route.params.id}`;
+    let uri = `https://dashboard.iammarcmason.now.sh:4000/posts/post/${this.$route.params.id}`;
     this.axios.get(uri).then(response => {
       this.post = response.data;
     });

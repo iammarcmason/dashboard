@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     addPost() {
-      let uri = "http://localhost:4000/posts/add";
+      let uri = "https://dashboard.iammarcmason.now.sh:4000/posts/add";
       this.axios.post(uri, this.post).then(() => {
         this.$router.push({ name: "posts" });
       });
